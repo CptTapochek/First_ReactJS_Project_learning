@@ -1,6 +1,8 @@
+import style from './Header.module.css';
+
 const Header = () => {
     return (
-        <header className="header">
+        <header className={style.header}>
             <img src="https://duckworthbooks.com/wp-content/uploads/2017/06/logo-tv-logo.png"></img>
         </header>
     );

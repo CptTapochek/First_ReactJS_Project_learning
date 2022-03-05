@@ -45,25 +45,6 @@
   /* grid-gap: 10px; */
 }
 
-.header {
-  grid-area: header;
-  background-color: green;
-}
-
-.header img {
-  width: 60px;
-}
-
-.nav {
-  grid-area: navigation;
-  background-color: greenyellow;
-}
-
-.content {
-  grid-area: main_content;
-  background-color: indianred;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

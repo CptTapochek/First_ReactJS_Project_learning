@@ -1,0 +1,8 @@
+.content {
+    grid-area: main_content;
+    background-color: indianred;
+}
+
+.item {
+
+}
