@@ -18,19 +18,20 @@
 }
 
 .avatar {
-    position: absolute;
-    margin-top: -60px;
+    position: relative;
+    margin-top: -120px;
     box-shadow: 1px 1px 20px 0 #868686;
     width: 200px;
     height: 200px;
     border-radius: 100%;
     border: 5px solid #fff;
-    margin-left: -500px;
+    margin-left: -230px;
 }
 
 .features {
     margin-top: -10px;
     width: 700px;
+    margin-left: 50px;
 }
 
 .user_name {

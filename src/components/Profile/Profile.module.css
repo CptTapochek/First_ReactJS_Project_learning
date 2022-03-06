@@ -1,5 +1,12 @@
 .content {
-    width: 900px;
+    width: 800px;
     margin-left: 70px;
     border: 1px solid red;
+    padding: 50px;
+}
+
+.post{
+    border: 1px solid black;
+    height: 200px;
+    margin-bottom: 30px;
 }
