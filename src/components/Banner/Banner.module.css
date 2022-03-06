@@ -2,10 +2,6 @@
     grid-area: banner;
 }
 
-a{
-    text-decoration: none;
-}
-
 .background_image{
     height: 300px;
     width: 100%;
@@ -71,6 +67,3 @@ a{
 .item_map img{
     width: 12px;
 }
-
-
-

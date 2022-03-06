@@ -1,4 +1,50 @@
 .nav {
-    grid-area: navigation;
-    background-color: greenyellow;
+    width: 220px;
+}
+
+.item img {
+    width: 16px;
+    margin-right: 10px;
+}
+
+.item {
+    margin-top: 10px;
+    color: #484848;
+}
+
+.chat_btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.chat_btn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    background-color: #27d584;
+    cursor: pointer;
+    padding: 10px 73px;
+    border-radius: 25px;
+
+    font-size: 18px;
+    color: #fff;
+}
+
+.chat_btn button img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.star{
+    width: 25px;
+    margin-left: 5px;
+}
+
+.stars_block {
+    display: flex;
+    justify-content: center;
+    margin-left: -5px;
 }

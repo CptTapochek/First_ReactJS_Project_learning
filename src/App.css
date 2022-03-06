@@ -2,6 +2,10 @@
   --MainGradient: linear-gradient(to left, #fdba2d, #b21f1f, #2e49bc 70%);
 }
 
+a{
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
 }
@@ -31,13 +35,19 @@
   display: grid;
   width: 100%;
   grid-template-areas: 
-  "header header"
-  "banner banner"
-  "navigation main_content";
+  "header"
+  "banner"
+  "main_content";
   grid-template-rows: 60px 1fr;
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: 2fr;
   
   /* grid-gap: 10px; */
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
 }
 
 @keyframes App-logo-spin {
