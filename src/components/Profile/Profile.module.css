@@ -1,0 +1,24 @@
+.content {
+    grid-area: main_content;
+    background-color: indianred;
+}
+
+.item {
+
+}
+
+.background {
+
+}
+
+.user_info {
+
+}
+
+.avatar {
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 4px solid #fff;
+}

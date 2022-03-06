@@ -3,11 +3,11 @@ import style from './Profile.module.css';
 const Profile = () => {
     return (
         <div className={style.content}>
-            <div>
+            <div className={style.background}>
                 <img src="https://wallpaperforu.com/wp-content/uploads/2020/07/neon-wallpaper-200702140825151366x768.jpg"></img>
             </div>
-            <div>
-                avatar + description
+            <div className={style.user_info}>
+                <img className={style.avatar} src={"https://cdn.ipeeworld.com/wp-content/uploads/2021/06/funny-cat.jpeg?width=600"}></img>
             </div>
             <div>
                 My posts

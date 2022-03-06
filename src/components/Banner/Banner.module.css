@@ -1,0 +1,76 @@
+.banner {
+    grid-area: banner;
+}
+
+a{
+    text-decoration: none;
+}
+
+.background_image{
+    height: 300px;
+    width: 100%;
+    background-image: url("https://s1.1zoom.ru/big3/36/USA_Houses_Skyscrapers_Evening_Manhattan_New_York_562768_3840x2160.jpg");
+    background-size: cover;
+    background-position: 20% 40%;
+}
+
+.info_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.avatar {
+    position: absolute;
+    margin-top: -60px;
+    box-shadow: 1px 1px 20px 0 #868686;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    margin-left: -500px;
+}
+
+.features {
+    margin-top: -10px;
+    width: 700px;
+}
+
+.user_name {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.user_job_position {
+    margin-top: 5px;
+}
+
+.user_contact_info {
+    display: flex;
+    margin-top: 10px;
+}
+
+.item a{
+    margin: 0 0 0 25px;
+    color: #979797;
+}
+
+.item img{
+    width: 15px;
+}
+
+.item img, .item_map img{
+    margin: 0 5px -2px 0;
+}
+
+.item_map{
+    color: #979797;
+}
+
+.item_map img{
+    width: 12px;
+}
+
+
+
