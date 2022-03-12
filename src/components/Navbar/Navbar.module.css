@@ -19,22 +19,29 @@
     justify-content: center;
 }
 
-.chat_btn button{
+.chat_btn a{
     display: flex;
     justify-content: center;
     align-items: center;
 
-    border: none;
+    border: 2px solid #27d584;
     background-color: #27d584;
     cursor: pointer;
-    padding: 10px 73px;
+    padding: 8px 70px;
     border-radius: 25px;
 
     font-size: 18px;
     color: #fff;
+    transition: 0.3s ease;
 }
 
-.chat_btn button img {
+.chat_btn a:active{
+    background-color: transparent;
+    color: #27d584;
+    transition: 0.3s ease;
+}
+
+.chat_btn a img {
     width: 25px;
     margin-right: 10px;
 }

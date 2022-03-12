@@ -1,0 +1,7 @@
+.chat_block{
+    width: 800px;
+    margin-left: 70px;
+    padding: 50px;
+    min-height: 500px;
+    border: 1px solid black;
+}

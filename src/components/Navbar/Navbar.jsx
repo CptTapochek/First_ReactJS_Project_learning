@@ -1,6 +1,7 @@
 import style from './Navbar.module.css';
 import React from 'react';
 import Rating from "react-rating";
+import {NavLink} from "react-router-dom";
 
 React.createElement(Rating)
 
@@ -16,10 +17,10 @@ const Navbar = () => {
                 bozu168@gmail.com
             </div>
             <div className={style.chat_btn}>
-                <button>
-                    {/*<img className={style.chat_img_w} src={"images/icons/chat_white.svg"}/>*/}
+                <NavLink to={"/chat"}>
+                    {/*<img className={style.chat_img_w} src={"images/icons/chat_green.svg"}/>*/}
                     <img className={style.chat_img_g} src={"images/icons/chat_white.svg"}/>Chat
-                </button>
+                </NavLink>
             </div> <br></br>
             <div className={style.stars_block}>
                 <Rating

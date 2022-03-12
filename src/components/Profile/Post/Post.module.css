@@ -1,9 +1,3 @@
-.content {
-    width: 800px;
-    margin-left: 70px;
-    padding: 50px;
-}
-
 .post{
     display: flex;
     align-items: center;
