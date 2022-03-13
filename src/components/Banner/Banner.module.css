@@ -25,13 +25,12 @@
     height: 200px;
     border-radius: 100%;
     border: 5px solid #fff;
-    margin-left: -230px;
 }
 
 .features {
     margin-top: -10px;
-    width: 700px;
-    margin-left: 50px;
+    width: 50%;
+    margin-left: 2%;
 }
 
 .user_name {

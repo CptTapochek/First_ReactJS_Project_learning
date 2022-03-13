@@ -1,7 +1,143 @@
 .chat_block{
-    width: 800px;
+    width: 44%;
     margin-left: 70px;
-    padding: 50px;
-    min-height: 500px;
-    border: 1px solid black;
+    padding: 30px;
+    height: 600px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.dialogs {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #656565;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family: "Varela Round", sans-serif;
+}
+
+.dialog {
+    display: flex;
+    align-items: center;
+    margin: 7% 0 0 7%;
+    cursor: pointer;
+    width: 85%;
+    padding: 5px 0;
+    box-sizing: border-box;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+.dialog:hover{
+    border-top: 2px solid #e7e2e2;
+    border-bottom: 2px solid #e7e2e2;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.name{
+    margin-left: 5px;
+    color: #e7e2e2;
+}
+
+.messages{
+    background-color: #fff;
+    position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.messages_block{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.my_messages, .their_messages{
+    width: 50%;
+}
+
+.my_messages{
+    margin-left: 50%;
+}
+
+.message{
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.my_messages .message{
+    background-color: #70e36c;
+}
+
+.my_messages .username{
+    float: right;
+}
+
+.their_messages .username{
+    float: left;
+}
+
+.their_messages .message{
+    background-color: #7a99dc;
+}
+
+.username {
+    font-size: 14px;
+    color: #979797;
+    margin-top: -20px;
+}
+
+.send_msg_block{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-bottom-right-radius: 20px;
+}
+
+.send_msg_block button{
+    float: right;
+    border: 2px solid #27d584;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #27d584;
+    border-radius: 20px;
+    padding: 2px 20px;
+    margin-top: 5px;
+    font-family: "Varela Round", sans-serif;
+    font-size: 16px;
+    transition: ease .3s;
+}
+
+.send_msg_block button:active {
+    color: #fff;
+    transition: ease .3s;
+    background-color: #27d584;
+}
+
+.send_msg_block textarea{
+    font-size: 16px;
+    font-family: "Varela Round", sans-serif;
+    width: 100%;
+    height: 80%;
+    resize: none;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 7px;
+    padding: 10px;
+    box-sizing: border-box;
 }
