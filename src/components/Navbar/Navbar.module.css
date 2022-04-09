@@ -48,11 +48,12 @@
 
 .star{
     width: 25px;
-    margin-left: 5px;
+    cursor: pointer;
 }
-
 .stars_block {
     display: flex;
     justify-content: center;
     margin-left: -5px;
 }
+
+

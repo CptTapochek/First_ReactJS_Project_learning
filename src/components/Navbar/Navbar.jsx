@@ -1,11 +1,33 @@
 import style from './Navbar.module.css';
-import React from 'react';
-import Rating from "react-rating";
+import React, {useEffect, useState} from 'react';
 import {NavLink} from "react-router-dom";
+import {renderEntireTree} from "../../render";
 
-React.createElement(Rating)
+const StarRating = () => {
+    const [rating, setRating] = useState(0);
+    const [hover, setHover] = useState(0);
+    return (
+        <div className={style.star-rating}>
+            {[...Array(5)].map((star, index) => {
+                index += 1;
+                return (
+                    <img
+                        key={index}
+                        src={index <= (hover || rating) ? "images/icons/full_star.png" : "images/icons/empty_star.png"}
+                        className={style.star}
+                        onClick={() => setRating(index)}
+                        onMouseEnter={() => setHover(index)}
+                        onMouseLeave={() => setHover(rating)}
+                    />
+                );
+            })}
+        </div>
+    );
+};
+
 
 const Navbar = () => {
+
     return (
         <nav className={style.nav}>
             <div className={style.item}>
@@ -23,12 +45,7 @@ const Navbar = () => {
                 </NavLink>
             </div> <br></br>
             <div className={style.stars_block}>
-                <Rating
-                    placeholderRating={3}
-                    placeholderSymbol={<img src="images/icons/full_star.png" className={style.star} />}
-                    emptySymbol={<img src="images/icons/empty_star.png" className={style.star} />}
-                    fullSymbol={<img src="images/icons/full_star.png" className={style.star} />}
-                />
+                <StarRating/>
             </div>
         </nav>
     );

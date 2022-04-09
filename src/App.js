@@ -18,7 +18,7 @@ const App = () => {
                     <Navbar/>
                     <Routes>
                         <Route path={"/"} element={<Profile/>}/>
-                        <Route path={"/chat"} element={<Chat/>}/>
+                        <Route exact path={"/chat/*"} element={<Chat/>}/>
                     </Routes>
                 </div>
                 <Footer/>

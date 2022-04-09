@@ -58,6 +58,34 @@
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    height: 390px;
+    overflow-y: scroll;
+}
+
+.messages_block::-webkit-scrollbar {
+    width: 8px;
+    transition: .2s ease;
+}
+
+/* Track */
+.messages_block::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 10px;
+    transition: .2s ease;
+}
+
+/* Handle */
+.messages_block::-webkit-scrollbar-thumb {
+    background: #a6a6a6;
+    border-radius: 10px;
+    transition: .2s ease;
+}
+
+/* Handle on hover */
+.messages_block::-webkit-scrollbar-thumb:hover {
+    background: #656565;
+    border-radius: 10px;
+    transition: .2s ease;
 }
 
 .my_messages, .their_messages{
